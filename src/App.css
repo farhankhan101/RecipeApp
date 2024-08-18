@@ -1,0 +1,222 @@
+  
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+/* src/components/Header.css */
+.header-navbar {
+  background: linear-gradient(135deg, #1a1a1a, #4b4b4b); /* Dark gradient background */
+  padding: 10px 20px;
+  border-bottom: 2px solid #333;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  /* border-radius: 8px; Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.navbar-brand {
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa; /* Slightly lighter color on hover */
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-link {
+  color: #fff;
+  margin-left: 20px;
+  transition: color 0.3s, transform 0.3s;
+  text-decoration: none; /* Ensure no underline */
+}
+
+.icon-link:hover {
+  color: #f8f9fa; /* Lighter color on hover */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+/* src/components/BannerCarousel.css */
+/* src/components/BannerCarousel.css */
+
+.banner-carousel {
+  position: relative;
+  overflow: hidden;
+  height: 60vh; /* Set the height of the carousel */
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 60vh; /* Match the height of the carousel */
+  object-fit: cover; /* Cover the container without distortion */
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust positioning */
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center; /* Center text */
+  width: 100%; /* Full width for text alignment */
+}
+
+.carousel-caption h3 {
+  font-size: 2.5rem; /* Adjust font size as needed */
+  margin-bottom: 1rem; /* Space between title and description */
+}
+
+.carousel-caption p {
+  font-size: 1.25rem; /* Adjust font size as needed */
+  margin-bottom: 1.5rem; /* Space between description and button */
+}
+
+.view-button {
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 1rem; /* Adjust button size as needed */
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+/* src/pages/DetailPage.css */
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* src/pages/DetailPage.css */
+.detail-page {
+  /* background: #f5f5f5; */
+  padding: 2rem 0;
+  border-radius: 15px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.recipe-image-container {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.recipe-image-container .img-fluid {
+  border-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-image-container .img-fluid:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.recipe-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.recipe-details {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.description-text {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+.ingredient-list {
+  margin-bottom: 1rem;
+}
+
+.ingredient-item {
+  background: rgba(0, 123, 255, 0.1);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  border-radius: 8px;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.recipe-meta p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* src/components/RecipeCard.css */
+.recipe-card {
+  border: none;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.9); /* Slightly less transparent for better readability */
+  backdrop-filter: blur(8px); /* Slightly less blur for a cleaner look */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 0.75rem;
+}
+
+.card-description {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.view-button {
+  border-radius: 50px; /* Rounded button */
+  padding: 0.5rem 1.5rem; /* More padding for a better click area */
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.view-button:hover {
+  background-color: #0056b3; /* Darker blue for hover */
+  border-color: #0056b3;
+}
+
+.recipe-card:hover {
+  transform: translateY(-8px); /* Slight lift on hover */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2); /* More pronounced shadow */
+}
+
+.card-img:hover {
+  transform: scale(1.03); /* Slight zoom effect on hover */
+}
